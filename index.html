@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Patient Registration</title>
+  <style>
+    /* (same styles as before) */
+  </style>
+</head>
+<body>
+  <h1>Patient Registration</h1>
+  <form id="patient-form">
+    <input name="name" placeholder="Name" required />
+    <input name="age" type="number" placeholder="Age" required />
+    <select name="gender" required>
+      <option value="" disabled selected>Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+    <input name="address" placeholder="Address" required />
+    <button type="submit">Register Patient</button>
+  </form>
+
+  <div class="query-section">
+    <h2>Run SQL Query</h2>
+    <textarea id="sql-query" rows="4">SELECT * FROM patients;</textarea>
+    <button id="run-query">Run Query</button>
+  </div>
+
+  <h2>Results</h2>
+  <table id="results-table">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
